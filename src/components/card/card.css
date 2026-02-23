@@ -1,0 +1,43 @@
+
+.custom-card {
+    background-color: #131F3F; 
+    border-radius: 15px; 
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+    height: 600px;
+    flex: 1;
+  }
+
+  .custom-card:hover {
+    transform: translateY(-5px);
+  }
+ 
+  .custom-card .card-title {
+    color: #FF7A30; 
+    font-size: 1.3rem;
+  }
+  
+  .btn-custom {
+    background-color: #0f223a; 
+    color: white;
+    font-weight: 500;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+  }
+  
+  .btn-custom:hover {
+    background-color: rgb(220, 53, 69); 
+    color: white;
+ 
+  }
+  
+
+  .custom-badge {
+    background-color: #FF7A30; 
+    color: #000;
+    font-weight: bold;
+    padding: 6px 10px;
+  }
+  

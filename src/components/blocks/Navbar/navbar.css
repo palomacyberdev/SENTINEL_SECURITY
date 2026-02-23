@@ -1,0 +1,54 @@
+.navbar-nav {
+  gap: 30px;
+}
+
+.navbar-brand,
+.nav-link {
+  color: #fff;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  font-size: 1.2rem;
+
+}
+
+.logo {
+  font-size: 2rem;
+}
+
+.nav-link.item{
+  border-bottom: 2px solid rgba(255, 255, 255, 0);
+}
+.nav-link.item:hover {
+  display: inline-block;
+  border-bottom: 2px solid rgb(220, 53, 69);
+  color: rgb(221, 221, 221);
+}
+.navbar-toggler{
+  border-color: white;
+}
+.navbar {
+  position: absolute;  
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: transparent; 
+  z-index: 10;          
+  transition: background 0.8s; 
+}
+
+.navbar .nav-link {
+  color: white;
+  font-weight: 500;
+}
+
+.navbar-brand img {
+  margin-right: 10%;
+  z-index: 11;
+}
+
+.icone-login {
+  position: absolute;
+  display: flex;
+  margin-left: 27%;
+  padding-top: 0.1rem;
+}
