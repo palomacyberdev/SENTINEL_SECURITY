@@ -9,7 +9,7 @@ export default function ServicoIndividual() {
 
   const servicos = {
     1: {
-      nome: "Segurança Para Eventos",
+      nome: "Teste",
       descricao:
         "Garantimos a segurança completa do seu evento, desde o controle de acesso até a proteção de convidados.",
       detalhes: [
