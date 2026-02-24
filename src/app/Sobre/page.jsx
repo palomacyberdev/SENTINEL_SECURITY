@@ -3,7 +3,9 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import { useEffect, useState } from "react";
 import "../globals.css";
+import "./sobre.css"
 import Link from "next/link";
+import FeedbackSection from "@/components/feedback/FeedbackSection.jsx";
 
 export default function Sobre() {
   const equipe = [
@@ -68,15 +70,15 @@ export default function Sobre() {
       >
         <section className="container p-5">
           <div className="row align-items-start">
-            <div className="col-12 col-lg-6 mb-4 mb-lg-0">
+            {/* <div className="col-12 col-lg-6 mb-4 mb-lg-0">
               <img
                 src="./img/empresa.png"
                 alt="Imagem Principal"
                 className="img-fluid rounded shadow"
               />
-            </div>
+            </div> */}
 
-            <div className="col-12 col-lg-6 d-flex flex-column ps-4">
+            {/* <div className="col-12 col-lg-6 d-flex flex-column ps-4">
               <h3 className="card-title mb-3 text-danger">Sobre Nós</h3>
 
               <p className="fs-5 ">
@@ -103,14 +105,99 @@ export default function Sobre() {
                 ))}
               </ul>
 
-            </div>
+            </div> */}
+
+            <section className="about-section">
+              <div className="container">
+                <div className="about-grid">
+                  {/* Imagem */}
+                  <div className="about-image">
+                    <img src="./img/empresa.png" alt="Empresa Sentinel Security" />
+                  </div>
+                  {/* Conteúdo */}
+                  <div className="about-content">
+                    <h2>
+                      About Sentinel <span>Security</span>
+                    </h2>
+
+                    <p>
+                      “MindCare” is one of the largest private medical centers in Chicago.
+                      For 30 years, we have been helping people get rid of depression,
+                      anxiety, drug addiction, smoking, gambling and other addictions.
+                    </p>
+
+                    <p>
+                      We take a comprehensive approach to solving problems, so in addition
+                      to specialized specialists, you can get a consultation with a
+                      neurologist and therapist.
+                    </p>
+
+                    {/* Cards */}
+                    <div className="stats-grid">
+                      <div className="stat-card main">
+                        <h3>600</h3>
+                        <p>Years of experience of our medical staff</p>
+                      </div>
+                      <div className="stat-card">
+                        <h3>30</h3>
+                        <p>Years our doctors have been caring for the health</p>
+                      </div>
+                      <div className="stat-card">
+                        <h3>60</h3>
+                        <p>Certified specialists in psychology and psychotherapy</p>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
           </div>
         </section>
       </div>
 
+      <section className="mvv-section">
+        <div className="container">
+          <div className="section-header">
+            <span className="subtitle">Our Foundation</span>
+            <h2>Mission, Vision &amp; Values</h2>
+          </div>
+          <div className="mvv-grid">
+            {/* Missão */}
+            <div className="mvv-card">
+              <div className="mvv-icon"></div>
+              <h3>Our Mission</h3>
+              <p>
+                To provide compassionate, evidence-based mental health care,
+                empowering individuals to achieve emotional balance and long-term
+                wellbeing.
+              </p>
+            </div>
+            {/* Visão */}
+            <div className="mvv-card">
+              <div className="mvv-icon"></div>
+              <h3>Our Vision</h3>
+              <p>
+                To be a reference center in psychological and psychiatric excellence,
+                recognized for innovation, humanized care and transformative impact.
+              </p>
+            </div>
+            {/* Valores */}
+            <div className="mvv-card">
+              <div className="mvv-icon"></div>
+              <h3>Our Values</h3>
+              <p>
+                Ethics, empathy, professionalism, continuous learning and commitment
+                to the mental health of every patient.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
 
       <main className="text-dark pt-5" style={{ minHeight: "100vh" }}>
-        <section className="container mt-5" style={{ backgroundColor: "var(--background)" }}>
+        {/* <section className="container mt-5" style={{ backgroundColor: "var(--background)" }}>
           <h1 className="text-center fw-bold mb-5 text-danger">Nossa Equipe</h1>
           <div className="row justify-content-center g-4 align-items-stretch">
             {equipe.map((membro, idx) => (
@@ -158,7 +245,73 @@ export default function Sobre() {
               </div>
             ))}
           </div>
+        </section> */}
+
+        <section className="specialists-section">
+          <div className="container">
+            <div className="section-header">
+              <span className="subtitle">Meet Our</span>
+              <h2>Expert Specialists</h2>
+            </div>
+            <div className="cards-grid">
+              {/* Card 1 */}
+              <div className="doctor-card">
+                <div className="doctor-image">
+                  <img src="doctor1.png" alt="Dr. Michael Anderson" />
+                </div>
+                <h3>Dr. Michael Anderson</h3>
+                <span className="role">Chief Doctor</span>
+                <p>
+                  Leader in Psychological Health <br />
+                  Renowned Expert in Psychiatry
+                </p>
+              </div>
+              {/* Card 2 */}
+              <div className="doctor-card">
+                <div className="doctor-image">
+                  <img src="doctor2.png" alt="Dr. Robert Wilson" />
+                </div>
+                <h3>Dr. Robert Wilson</h3>
+                <span className="role">Deputy Chief Doctor</span>
+                <p>
+                  Advocate for Mental Wellness <br />
+                  Acclaimed Specialist in Clinical Psychology
+                </p>
+              </div>
+              {/* Card 3 */}
+              <div className="doctor-card">
+                <div className="doctor-image">
+                  <img src="doctor3.png" alt="Dr. Emily Davis" />
+                </div>
+                <h3>Dr. Emily Davis</h3>
+                <span className="role">Clinical Psychologist</span>
+                <p>
+                  Committed to Emotional Wellbeing <br />
+                  Esteemed Professional in Psychological Therapy
+                </p>
+              </div>
+              {/* Card 4 */}
+              <div className="doctor-card">
+                <div className="doctor-image">
+                  <img src="doctor4.png" alt="Dr. Sarah Parker" />
+                </div>
+                <h3>Dr. Sarah Parker</h3>
+                <span className="role">Psychiatrist</span>
+                <p>
+                  Expert in Mental Health Treatment <br />
+                  Respected Authority in Psychiatry
+                </p>
+              </div>
+            </div>
+            <div className="button-wrapper">
+              <a href="#" className="btn-primary">
+                See All Doctors →
+              </a>
+            </div>
+          </div>
         </section>
+
+        <FeedbackSection />
 
         <section
           className="text-center py-5 mt-5 border-top"

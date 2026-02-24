@@ -1,0 +1,123 @@
+.feedbackSection {
+  padding: 100px 20px;
+  /*background: #f8f9fa;*/
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 70px;
+}
+
+.subtitle {
+  color: #2BB5A8;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.header h2 {
+  font-size: 2.5rem;
+  color: #0f3b36;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr 100px 1fr;
+  align-items: center;
+  gap: 40px;
+}
+
+/* CLIENTES */
+.clientsList {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.client {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  cursor: pointer;
+  opacity: 0.6;
+  transition: all 0.3s ease;
+}
+
+.client img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.active {
+  background: white;
+  padding: 15px;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+  opacity: 1;
+}
+
+/* TIMELINE */
+.timeline {
+  position: relative;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+}
+
+.line {
+  width: 2px;
+  background: #2BB5A8;
+  height: 100%;
+}
+
+.dot {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  background: #2BB5A8;
+  border-radius: 50%;
+  transition: top 0.4s ease;
+}
+
+/* COMENTÁRIO */
+.commentBox {
+  background: white;
+  padding: 40px;
+  border-radius: 30px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+  animation: fadeSlide 0.4s ease;
+}
+
+@keyframes fadeSlide {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade {
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.quote {
+  font-size: 40px;
+  color: #2BB5A8;
+  margin-bottom: 20px;
+}
+
+.stars {
+  margin-top: 20px;
+  color: #2BB5A8;
+  font-size: 20px;
+}
