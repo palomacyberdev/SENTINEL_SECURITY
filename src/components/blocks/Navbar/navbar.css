@@ -1,54 +1,71 @@
+
+/* Garante que os itens da lista fiquem alinhados no meio verticalmente */
 .navbar-nav {
-  gap: 30px;
+    align-items: center;
 }
 
-.navbar-brand,
-.nav-link {
-  color: #fff;
-  font-weight: bold;
-  transition: all 0.3s ease;
-  font-size: 1.2rem;
-
+/* Aumenta o tamanho real da imagem */
+.logo-custom {
+   
+    
 }
 
-.logo {
-  font-size: 2rem;
+/* Remove paddings que possam estar apertando a logo */
+.navbar-brand {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+    display: flex;
+    align-items: center;
 }
 
-.nav-link.item{
-  border-bottom: 2px solid rgba(255, 255, 255, 0);
-}
-.nav-link.item:hover {
-  display: inline-block;
-  border-bottom: 2px solid rgb(220, 53, 69);
-  color: rgb(221, 221, 221);
-}
-.navbar-toggler{
-  border-color: white;
-}
+/* Ajusta a altura da navbar para acomodar a logo maior */
 .navbar {
-  position: absolute;  
-  top: 0;
-  left: 0;
-  width: 100%;
-  background: transparent; 
-  z-index: 10;          
-  transition: background 0.8s; 
+    background-color: white !important;
+    padding: 15px 0 !important; /* Aumentamos um pouco o padding vertical da barra */
+    min-height: 80px; 
 }
 
-.navbar .nav-link {
-  color: white;
-  font-weight: 500;
+/* Estilo dos links (Início, Serviços, Sobre) */
+.nav-item-link {
+    color: #333 !important;
+    font-weight: 500 !important;
+    font-size: 1rem !important;
+    margin: 0 10px !important;
+    text-decoration: none !important;
 }
 
-.navbar-brand img {
-  margin-right: 10%;
-  z-index: 11;
+.nav-item-link:hover {
+    color: #dc3545 !important; /* Vermelho Sentinel */
 }
 
-.icone-login {
-  position: absolute;
-  display: flex;
-  margin-left: 27%;
-  padding-top: 0.1rem;
+/* O BOTÃO IGUAL AO EXEMPLO (Fale Conosco) */
+.btn-contato-nav {
+    background-color: #00a8ad !important; /* Cor exata do exemplo da imagem */
+    color: white !important;
+    padding: 12px 30px !important;
+    border-radius: 50px !important; /* Deixa totalmente arredondado */
+    font-weight: bold !important;
+    text-decoration: none !important;
+    display: inline-block !important;
+    transition: 0.3s !important;
+    border: none !important;
+    margin-left: 20px !important;
+}
+
+.btn-contato-nav:hover {
+    opacity: 0.9;
+    transform: scale(1.05);
+}
+
+
+
+/* Responsividade: No celular o botão não pode ficar gigante */
+@media (max-width: 991px) {
+    .navbar-nav {
+        padding: 20px 0;
+        text-align: center;
+    }
+    .btn-contato-nav {
+        margin: 15px 0 0 0 !important;
+    }
 }
